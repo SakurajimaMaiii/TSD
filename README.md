@@ -23,7 +23,7 @@ Please use `train.py` to train the source model. For example:
 python train.py --dataset PACS --data_dir your_data_dir 
 ```
 Change `--dataset PACS` for other datasets, such as `office-home`, `VLCS`, `DomainNet`.  
-Set `--net` to use different backbones, such as `resnext50`, 'ViT-B16'.
+Set `--net` to use different backbones, such as `resnext50`, `ViT-B16`.
 ## Test time adaptation
 ```
 python unsupervise_adapt.py --dataset PACS\
