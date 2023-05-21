@@ -24,7 +24,10 @@ python train.py --dataset PACS --data_dir your_data_dir
 You can set different datasets or networks.
 ## Test time adaptation
 ```
-python unsupervise_adapt.py --dataset PACS --data_dir your_data_dir --adapt_alg TSD --pretrain_dir your_pretrain_model_dir
+python unsupervise_adapt.py --dataset PACS \
+                            --data_dir your_data_dir \
+                            --adapt_alg TSD \ 
+                            --pretrain_dir your_pretrain_model_dir
 ```
 ## Citation
 ```
