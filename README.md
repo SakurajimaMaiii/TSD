@@ -1,6 +1,6 @@
 # TSD
-PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (CVPR 2023).  
-[arXiv](https://arxiv.org/abs/2303.10902), [open access](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Feature_Alignment_and_Uniformity_for_Test_Time_Adaptation_CVPR_2023_paper.html).  
+PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (**CVPR 2023**).  
+Paper could be found at [arXiv](https://arxiv.org/abs/2303.10902) or [open access](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Feature_Alignment_and_Uniformity_for_Test_Time_Adaptation_CVPR_2023_paper.html).  
 This codebase is mainly based on [T3A](https://github.com/matsuolab/T3A) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG).  
 ## Dependence 
 ```
