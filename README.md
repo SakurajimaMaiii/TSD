@@ -21,14 +21,17 @@ Please use `train.py` to train the source model. For example:
 ```
 python train.py --dataset PACS --data_dir your_data_dir 
 ```
-You can set different datasets or networks.
+Change `--dataset PACS` for other datasets, such as `office-home`, `VLCS`, `DomainNet`.
+Set `--net` to use different backbones, such as `resnext50`, 'ViT-B16'.
 ## Test time adaptation
 ```
-python unsupervise_adapt.py --dataset PACS \
-                            --data_dir your_data_dir \
-                            --adapt_alg TSD \ 
+python unsupervise_adapt.py --dataset PACS\
+                            --data_dir your_data_dir\
+                            --adapt_alg TSD\ 
                             --pretrain_dir your_pretrain_model_dir
 ```
+Set `--adapt_alg TSD` to use different methods of test time adaptation, e.g. `T3A`, `SHOT-IM`, `Tent`.
+`--pretrain_dir` denotes the path of source model, e.g. `./train_outputs/model.pkl`.
 ## Citation
 ```
 @InProceedings{Wang_2023_CVPR,
