@@ -30,7 +30,7 @@ python unsupervise_adapt.py --dataset PACS\
                             --data_dir your_data_dir\
                             --adapt_alg TSD\ 
                             --pretrain_dir your_pretrain_model_dir\
-                            --lr 1e-4\
+                            --lr 1e-4
 ```
 Set `--adapt_alg TSD` to use different methods of test time adaptation, e.g. `T3A`, `SHOT-IM`, `Tent`.  
 `--pretrain_dir` denotes the path of source model, e.g. `./train_outputs/model.pkl`.  
