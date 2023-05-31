@@ -10,6 +10,7 @@ numpy
 tqdm
 timm
 sklearn
+pillow
 ```
 ## Dataset
 Download datasets used in our paper from:  
