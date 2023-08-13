@@ -40,13 +40,12 @@ You can also search it using _training domain validation set_.
 ## Citation
 If this repo is useful for your research, please consider citing our paper:
 ```
-@InProceedings{Wang_2023_CVPR,
-    author    = {Wang, Shuai and Zhang, Daoan and Yan, Zipei and Zhang, Jianguo and Li, Rui},
-    title     = {Feature Alignment and Uniformity for Test Time Adaptation},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2023},
-    pages     = {20050-20060}
+@inproceedings{wang2023feature,
+  title={Feature alignment and uniformity for test time adaptation},
+  author={Wang, Shuai and Zhang, Daoan and Yan, Zipei and Zhang, Jianguo and Li, Rui},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={20050--20060},
+  year={2023}
 }
 ```
 
