@@ -33,7 +33,7 @@ python unsupervise_adapt.py --dataset PACS\
                             --pretrain_dir your_pretrain_model_dir\
                             --lr 1e-4
 ```
-Set `--adapt_alg TSD` to use different methods of test time adaptation, e.g. `T3A`, `SHOT-IM`, `Tent`.  
+Change `--adapt_alg TSD` to use different methods of test time adaptation, e.g. `T3A`, `SHOT-IM`, `Tent`.  
 `--pretrain_dir` denotes the path of source model, e.g. `./train_outputs/model.pkl`.  
 Empirically, set `--lr` to 1e-4 or 1e-5 achieves good performance.
 You can also search it using _training domain validation set_.
