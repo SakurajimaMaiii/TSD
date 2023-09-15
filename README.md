@@ -21,6 +21,7 @@ Download datasets used in our paper from:
 ## Train source model
 Please use `train.py` to train the source model. For example:
 ```
+cd code
 python train.py --dataset PACS --data_dir your_data_dir --opt_type Adam --lr 5e-5 --max_epoch 50
 ```
 Change `--dataset PACS` for other datasets, such as `office-home`, `VLCS`, `DomainNet`.  
