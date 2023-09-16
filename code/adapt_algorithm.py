@@ -312,7 +312,6 @@ class T3A(nn.Module):
         return self.supports, self.labels
         
 
-###################################
 class TSD(nn.Module):
     """
     Test-time Self-Distillation (TSD)
