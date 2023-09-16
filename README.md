@@ -12,7 +12,7 @@ timm
 sklearn
 pillow
 ```
-If your want to use efficientnet, please use `torchvision>=0.11.0`.
+If you want to use efficientnet, please confirm `torchvision>=0.11.0`.
 ## Dataset
 Download datasets used in our paper from:  
 [PACS](https://drive.google.com/uc?id=1JFr8f805nMUelQWWmfnJR3y4_SYoN5Pd)  
