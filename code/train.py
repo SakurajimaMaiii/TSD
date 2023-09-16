@@ -144,12 +144,13 @@ if __name__ == '__main__':
             if acc_record['valid'] > best_valid_acc:
                 best_valid_acc = acc_record['valid']
                 target_acc = acc_record['target']
+                save_checkpoint('model.pkl', algorithm, args)
             if args.save_model_every_checkpoint:
                 save_checkpoint(f'model_epoch{epoch}.pkl', algorithm, args)
             print('total cost time: %.4f' % (time.time()-sss))
             algorithm_dict = algorithm.state_dict()
 
-    save_checkpoint('model.pkl', algorithm, args)
+    save_checkpoint('model_last.pkl', algorithm, args)
 
     print('valid acc: %.4f' % best_valid_acc)
     print('DG result: %.4f' % target_acc)
