@@ -2,15 +2,16 @@
 This repo is officical PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (**CVPR 2023**) by Shuai Wang, [Daoan Zhang](https://dwan.ch/), [Zipei Yan](https://yanzipei.github.io/), [Jianguo Zhang](https://scholar.google.com/citations?user=ypSmZtIAAAAJ&hl=en), [Rui Li](https://scholar.google.com/citations?user=zTByNnsAAAAJ&hl=en&oi=ao).  
 This paper could be found at [arXiv](https://arxiv.org/abs/2303.10902), [open access](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Feature_Alignment_and_Uniformity_for_Test_Time_Adaptation_CVPR_2023_paper.html) and [IEEEXplore](https://ieeexplore.ieee.org/document/10203978).  
 This codebase is mainly based on [T3A](https://github.com/matsuolab/T3A) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG).  
-## 💻 Dependence 
+## 💻 Dependence
+We use `python==3.8.13`, other packages including:
 ```
-torch
-torchvision
-numpy
-tqdm
-timm
+torch==1.12.0
+torchvision==0.13.0
+numpy==1.22.3
+tqdm==4.65.0
+timm==0.6.12
 sklearn
-pillow
+pillow==9.0.1
 ```
 If you want to use efficientnet, please confirm `torchvision>=0.11.0`.
 ## Dataset
