@@ -21,7 +21,7 @@ def set_random_seed(seed=0):
 def save_checkpoint(filename, alg, args):
     save_dict = {
         "args": vars(args),
-        "model_dict": alg.cpu().state_dict()
+        "model_dict": alg.state_dict()
     }
     torch.save(save_dict, os.path.join(args.output, filename))
 
