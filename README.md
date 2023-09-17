@@ -10,7 +10,7 @@ torchvision==0.13.0
 numpy==1.22.3
 tqdm==4.65.0
 timm==0.6.12
-sklearn
+scikit-learn==1.2.2 
 pillow==9.0.1
 ```
 If you want to use efficientnet, please confirm `torchvision>=0.11.0`.
