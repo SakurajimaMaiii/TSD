@@ -1,5 +1,5 @@
 # Feature Alignment and Uniformity for Test Time Adaptation
-This repo is officical PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (**CVPR 2023**) by Shuai Wang, [Daoan Zhang](https://dwan.ch/), [Zipei Yan](https://yanzipei.github.io/), [Jianguo Zhang](https://scholar.google.com/citations?user=ypSmZtIAAAAJ&hl=en), [Rui Li](https://scholar.google.com/citations?user=zTByNnsAAAAJ&hl=en&oi=ao).  
+__This repo is officical PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (CVPR 2023) by [Shuai Wang](https://scholar.google.com/citations?user=UbGMEyQAAAAJ&hl=en), [Daoan Zhang](https://dwan.ch/), [Zipei Yan](https://yanzipei.github.io/), [Jianguo Zhang](https://scholar.google.com/citations?user=ypSmZtIAAAAJ&hl=en), [Rui Li](https://scholar.google.com/citations?user=zTByNnsAAAAJ&hl=en&oi=ao).__  
 This paper could be found at [arXiv](https://arxiv.org/abs/2303.10902), [open access](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Feature_Alignment_and_Uniformity_for_Test_Time_Adaptation_CVPR_2023_paper.html) and [IEEEXplore](https://ieeexplore.ieee.org/document/10203978).  
 This codebase is mainly based on [T3A](https://github.com/matsuolab/T3A) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG).  
 ## 💻 Dependence
