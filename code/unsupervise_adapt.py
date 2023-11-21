@@ -195,7 +195,6 @@ if __name__ == '__main__':
             print("Update classifier")
         else:
             raise Exception("Do not support update with %s manner." % args.update_param)
-        optimizer = torch.optim.Adam(algorithm.parameters(),lr=args.lr)
         adapt_model = TSD(algorithm,optimizer,filter_K=args.filter_K,steps=args.steps, episodic=args.episodic)
     
     adapt_model.cuda()    
