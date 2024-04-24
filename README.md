@@ -72,7 +72,7 @@ Empirically, set `--lr` to 1e-4 or 1e-5 achieves good performance.
 You can also search it using _training domain validation set_.
 ## 📝 Citation
 If this repo is useful for your research, please consider citing our paper:
-```
+```bibtex
 @inproceedings{wang2023feature,
   title={Feature alignment and uniformity for test time adaptation},
   author={Wang, Shuai and Zhang, Daoan and Yan, Zipei and Zhang, Jianguo and Li, Rui},
