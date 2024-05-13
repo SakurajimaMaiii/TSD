@@ -1,5 +1,5 @@
 # Feature Alignment and Uniformity for Test Time Adaptation
-__This repo is officical PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (CVPR 2023) by [Shuai Wang](https://scholar.google.com/citations?user=UbGMEyQAAAAJ&hl=en), [Daoan Zhang](https://dwan.ch/), [Zipei Yan](https://yanzipei.github.io/), [Jianguo Zhang](https://scholar.google.com/citations?user=ypSmZtIAAAAJ&hl=en), [Rui Li](https://scholar.google.com/citations?user=zTByNnsAAAAJ&hl=en&oi=ao).__  
+__This repo is officical PyTorch implement of Feature Alignment and Uniformity for Test Time Adaptation (CVPR 2023) by [Shuai Wang](https://scholar.google.com/citations?user=UbGMEyQAAAAJ&hl=en), [Daoan Zhang](https://dwan.ch/), [Zipei Yan](https://yanzipei.github.io/), [Jianguo Zhang](https://scholar.google.com/citations?user=ypSmZtIAAAAJ&hl=en) and [Rui Li](https://scholar.google.com/citations?user=zTByNnsAAAAJ&hl=en&oi=ao).__  
 This paper could be found at [arXiv](https://arxiv.org/abs/2303.10902), [open access](https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Feature_Alignment_and_Uniformity_for_Test_Time_Adaptation_CVPR_2023_paper.html) and [IEEEXplore](https://ieeexplore.ieee.org/document/10203978).  
 This codebase is mainly based on [T3A](https://github.com/matsuolab/T3A) and [DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG).  
 ## 💻 Dependence
@@ -13,7 +13,7 @@ timm==0.6.12
 scikit-learn==1.2.2 
 pillow==9.0.1
 ```
-If you want to use efficientnet, please confirm `torchvision>=0.11.0`.
+If you want to use `efficientnet`, please confirm `torchvision>=0.11.0`.
 ## Dataset
 Download datasets used in our paper from:  
 [PACS](https://drive.google.com/uc?id=1JFr8f805nMUelQWWmfnJR3y4_SYoN5Pd)  
@@ -48,7 +48,7 @@ Download them from the above links, and organize them as follows.
 ```
 ## Train source model
 Please use `train.py` to train the source model. For example:
-```
+```bash
 cd code/
 python train.py --dataset PACS \
                 --data_dir your_data_dir \
@@ -59,7 +59,7 @@ python train.py --dataset PACS \
 Change `--dataset PACS` for other datasets, such as `office-home`, `VLCS`, `DomainNet`.  
 Set `--net` to use different backbones, such as `resnext50`, `ViT-B16`.
 ## Test time adaptation
-```
+```bash
 python unsupervise_adapt.py --dataset PACS \
                             --data_dir your_data_dir \
                             --adapt_alg TSD \ 
