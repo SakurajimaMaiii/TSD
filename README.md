@@ -50,11 +50,14 @@ Download them from the above links, and organize them as follows.
 Please use `train.py` to train the source model. For example:
 ```bash
 cd code/
-python train.py --dataset PACS \
+python train.py --dataset PACS \  # PACS,office-home,VLCS,DomainNet
+                --algorithm ERM \
+                --batch_size 32 \
+                --net resnet 50 \  # resnet18, resnet50,ViT-B16/32,ViT-L16/32
                 --data_dir your_data_dir \
                 --opt_type Adam \
                 --lr 5e-5 \
-                --max_epoch 50
+                --max_epoch 50  # for PACS/OfficeHome/VLCS, 50 epochs (total 5k steps), for DomainNet, 150 epochs (total 15k steps)
 ```
 Change `--dataset PACS` for other datasets, such as `office-home`, `VLCS`, `DomainNet`.  
 Set `--net` to use different backbones, such as `resnext50`, `ViT-B16`.
