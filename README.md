@@ -16,9 +16,9 @@ pillow==9.0.1
 If you want to use `efficientnet`, please confirm `torchvision>=0.11.0`.
 ## Dataset
 Download datasets used in our paper from:  
-[PACS](https://drive.google.com/uc?id=1JFr8f805nMUelQWWmfnJR3y4_SYoN5Pd)  
-[OfficeHome](https://drive.google.com/uc?id=1uY0pj7oFsjMxRwaD3Sxy0jgel0fsYXLC)  
-[VLCS](https://drive.google.com/uc?id=1skwblH1_okBwxWxmRsp9_qi15hyPpxg8)  
+[PACS](https://drive.google.com/file/d/1WWi9tuUNFmUiw7Eirq_JT_hxYZv3J-Vv/view?usp=sharing)  
+[OfficeHome](https://drive.google.com/file/d/1USXqK4nCvOAR5Ty4iwKcuCOrRJoRuDyU/view?usp=drive_link)  
+[VLCS](https://drive.google.com/file/d/1yDuLrJdPSvMbTmpq-7XmwG0HnJengD-T/view?usp=sharing)  
 [DomainNet](http://ai.bu.edu/M3SDA/)  
 Download them from the above links, and organize them as follows.  
 ```
