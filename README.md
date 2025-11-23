@@ -50,17 +50,18 @@ Download them from the above links, and organize them as follows.
 Please use `train.py` to train the source model. For example:
 ```bash
 cd code/
-python train.py --dataset PACS \  # PACS,office-home,VLCS,DomainNet
+python train.py --dataset PACS \
                 --algorithm ERM \
                 --batch_size 32 \
-                --net resnet 50 \  # resnet18, resnet50,ViT-B16/32,ViT-L16/32
+                --net resnet 50 \
                 --data_dir your_data_dir \
                 --opt_type Adam \
                 --lr 5e-5 \
-                --max_epoch 50  # for PACS/OfficeHome/VLCS, 50 epochs (total 5k steps), for DomainNet, 150 epochs (total 15k steps)
+                --max_epoch 50
 ```
 Change `--dataset PACS` for other datasets, such as `office-home`, `VLCS`, `DomainNet`.  
 Set `--net` to use different backbones, such as `resnext50`, `ViT-B16`.
+Set `--max_epoch` to 50 for PACS/OfficeHome/VLCS. For DomainNet, it is better to set `--max_epoch` as 150.
 ## Test time adaptation
 ```bash
 python unsupervise_adapt.py --dataset PACS \
@@ -71,7 +72,7 @@ python unsupervise_adapt.py --dataset PACS \
 ```
 Change `--adapt_alg TSD` to use different methods of test time adaptation, e.g. `T3A`, `SHOT-IM`, `Tent`.  
 `--pretrain_dir` denotes the path of source model, e.g. `./train_outputs/model.pkl`.  
-Empirically, set `--lr` to 1e-4 or 1e-5 achieves good performance.
+Empirically, set `--lr` to 1e-4 or 1e-5 achieves good performance if all parameters are updated. If only update BN parameters, set `--lr` to 1e-3 is also good.
 You can also search it using _training domain validation set_.
 ## 📝 Citation
 If this repo is useful for your research, please consider citing our paper:
